@@ -24,9 +24,6 @@ public class Practica2 {
     * archivo de salida con el certificado.
     */
     public static void main(String[] args) throws IOException{
-        /*args = new String[2];
-        args[0] = "Ejemplo1.txt"; // Codigo auxiliar para pruebas rapidas
-        args[1] = "Certificado1.txt";/*/
         Practica2 p = new Practica2();
         p.generaCertificados(args);
         p.verificaCertificados(args);
@@ -126,9 +123,6 @@ public class Practica2 {
             }
 
             // Verificar que cada par de vértices adyacentes en la secuencia también sean adyacentes en G
-            
-            // AQUI ES DONDE ESTA EL PROBLEMA YA QUE LA VERIFICACION FALLA Y DA QUE ES INVALIDO SIEMPRE
-            // ESTO ES POR EL METODO sonAdyacentes.
             for (int i = 0; i < secuenciaVertices.size() - 1; i++) {
                 int v1 = secuenciaVertices.get(i);
                 int v2 = secuenciaVertices.get(i + 1);
